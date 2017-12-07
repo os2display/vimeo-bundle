@@ -1,0 +1,4 @@
+services:
+#    itk_vimeo.example:
+#        class: Itk\VimeoBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
