@@ -13,7 +13,6 @@ if (!window.slideFunctions['itk-vimeo']) {
         document.ITK_VIMEO_LOADED = true;
         $.getScript('https://player.vimeo.com/api/player.js')
         .done(function() {
-          console.log("loaded");
         })
         .fail(function() {
           document.ITK_VIMEO_LOADED = false;
@@ -51,18 +50,14 @@ if (!window.slideFunctions['itk-vimeo']) {
         player.off('ended');
 
         player.on('play', function() {
-          console.log('play');
           region.progressBar.start(player.getDuration());
         });
 
         player.on('ended', function() {
-          console.log('ended');
           region.nextSlide();
         });
 
         player.setLoop(false);
-        player.setVolume(0);
-        player.setCurrentTime(220);
 
         player.play();
       }, region.fadeTime);
