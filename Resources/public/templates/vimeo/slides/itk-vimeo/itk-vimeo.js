@@ -49,8 +49,8 @@ if (!window.slideFunctions['itk-vimeo']) {
         player.off('play');
         player.off('ended');
 
-        player.on('play', function() {
-          region.progressBar.start(player.getDuration());
+        player.getDuration().then(function (dur) {
+          region.progressBar.start(dur);
         });
 
         player.on('ended', function() {
@@ -59,6 +59,7 @@ if (!window.slideFunctions['itk-vimeo']) {
 
         player.setLoop(false);
 
+        // If background = 1, does not trigger the autoplay.
         player.play();
       }, region.fadeTime);
     }
