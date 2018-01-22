@@ -39,7 +39,9 @@ if (!window.slideFunctions['itk-vimeo']) {
           id: slide.options.id,
           width: page.width(),
           background: 1,
-          loop: false
+          title: 0,
+          byline: 0,
+          loop: 0
         };
 
         var element = document.querySelector('.js-itk-vimeo--player-' + slide.uniqueId);
@@ -48,6 +50,11 @@ if (!window.slideFunctions['itk-vimeo']) {
 
         player.off('play');
         player.off('ended');
+
+        // Set the volume to max, since background option sets it to 0.
+        if (slide.options.sound) {
+            player.setVolume(1);
+        }
 
         player.getDuration().then(function (dur) {
           region.progressBar.start(dur);

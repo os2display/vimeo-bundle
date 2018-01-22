@@ -17,9 +17,18 @@
           <div class="itk-template-extension--tool-section">
             <h2 class="itk-template-extension--tool-headline">Vælg id</h2>
 
-            <label for="vimeo_id">Vimeo ID</label>
+            <label for="vimeo_id">Vimeo video ID</label>
             <input id="vimeo_id" type="text" data-ng-model="slide.options.id">
 
+            Id'et findes i urlen til videoen.
+            F.eks. https://vimeo.com/58385453, hvor id'et er 58385453.
+          </div>
+          <div class="itk-template-extension--tool-section">
+            <h2 class="itk-template-extension--tool-headline">Lyd</h2>
+
+            <label for="vimeo_volume">Slå lyd til:</label>
+            <input type="checkbox" id="vimeo_volume"
+                   data-ng-model="slide.options.sound">
           </div>
         </div>
       </div>
