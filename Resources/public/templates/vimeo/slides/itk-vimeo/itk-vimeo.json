@@ -23,7 +23,8 @@
     "height": "1080"
   },
   "empty_options": {
-    "id": null
+    "id": null,
+    "sound": 1
   },
   "tools": [
     {
