@@ -46,7 +46,11 @@ if (!window.slideFunctions['itk-vimeo']) {
 
         var element = document.querySelector('.js-itk-vimeo--player-' + slide.uniqueId);
 
-        var player = new Vimeo.Player(element, options);
+        if (!slide.player) {
+            slide.player = new Vimeo.Player(element, options);
+        }
+
+        var player = slide.player;
 
         player.off('play');
         player.off('ended');
