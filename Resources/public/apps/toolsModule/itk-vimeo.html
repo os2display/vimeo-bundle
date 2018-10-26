@@ -18,9 +18,9 @@
             <h2 class="itk-template-extension--tool-headline">Vælg id</h2>
 
             <label for="vimeo_id">Vimeo video ID</label>
-            <input id="vimeo_id" type="text" data-ng-model="slide.options.id">
+            <input id="vimeo_id" name="vimeo_id" type="number" data-ng-model="slide.options.id" min="0" step="1">
 
-            Id'et findes i urlen til videoen.
+            Id'et findes i linket til videoen.
             F.eks. https://vimeo.com/58385453, hvor id'et er 58385453.
           </div>
           <div class="itk-template-extension--tool-section">
