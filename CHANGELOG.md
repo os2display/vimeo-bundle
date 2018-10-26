@@ -1,5 +1,10 @@
 # itk-os2display/vimeo-bundle CHANGELOG
 
+## 1.0.4
+
+* Changed video ID input field to be number field.
+* Changed wording of help text.
+
 ## 1.0.3
 
 * Changed js code to avoid reinitializing vimeo player.
