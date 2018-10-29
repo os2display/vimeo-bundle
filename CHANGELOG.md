@@ -1,5 +1,9 @@
 # itk-os2display/vimeo-bundle CHANGELOG
 
+## 1.0.5
+
+* Fixed try/catch to catch initialization errors as well.
+
 ## 1.0.4
 
 * Changed video ID input field to be number field.

@@ -46,12 +46,12 @@ if (!window.slideFunctions['itk-vimeo']) {
 
                 var element = document.querySelector('.js-itk-vimeo--player-' + slide.uniqueId);
 
-                // Initialize vimeo player.
-                if (!slide.player) {
-                    slide.player = new Vimeo.Player(element, options);
-                }
-
                 try {
+                    // Initialize vimeo player.
+                    if (!slide.player) {
+                        slide.player = new Vimeo.Player(element, options);
+                    }
+
                     var player = slide.player;
 
                     // Unregister previous event listeners.
@@ -88,7 +88,10 @@ if (!window.slideFunctions['itk-vimeo']) {
                     });
                 }
                 catch (err) {
-                    region.nextSlide();
+                    region.itkLog.info("Error running vimeo video, continuing");
+                    region.$timeout((function (region) {
+                        region.nextSlide();
+                    })(region), 1000);
                 }
             }, region.fadeTime);
         }
