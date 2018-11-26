@@ -31,10 +31,10 @@ if (!window.slideFunctions['itk-vimeo']) {
         run: function runSlide (slide, region) {
             region.itkLog.info('Running itk-vimeo slide: ' + slide.title);
 
-            var slideElement = $('.slide-' + slide.uniqueId);
-
             // Wait fadeTime before start to account for fade in.
             region.$timeout(function () {
+                var slideElement = $('.slide-' + slide.uniqueId);
+
                 var options = {
                     id: slide.options.id,
                     width: slideElement.width(),
@@ -88,7 +88,7 @@ if (!window.slideFunctions['itk-vimeo']) {
                     });
                 }
                 catch (err) {
-                    region.itkLog.info("Error running vimeo video, continuing");
+                    region.itkLog.info("Error running vimeo video, continuing...");
                     region.$timeout((function (region) {
                         region.nextSlide();
                     })(region), 1000);
