@@ -1,5 +1,9 @@
 # itk-os2display/vimeo-bundle CHANGELOG
 
+## 1.0.6
+
+* Fixed issue with iframe ending up without 100% width.
+
 ## 1.0.5
 
 * Fixed try/catch to catch initialization errors as well.
