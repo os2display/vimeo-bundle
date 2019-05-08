@@ -1,23 +1,23 @@
 {
-  "id": "itk-vimeo",
+  "id": "vimeo",
   "theme": "itk",
   "tags": [
     "ITK", "vimeo"
   ],
   "type": "slide",
   "name": "Vimeo video",
-  "icon": "itk-vimeo.png",
+  "icon": "vimeo.png",
   "paths": {
-    "live": "itk-vimeo.html",
-    "edit": "itk-vimeo-preview.html",
-    "preview": "itk-vimeo-preview.html",
-    "css": "itk-vimeo.css",
-    "js": "bundles/itkvimeo/templates/vimeo/slides/itk-vimeo/itk-vimeo.js"
+    "live": "vimeo.html",
+    "edit": "vimeo-preview.html",
+    "preview": "vimeo-preview.html",
+    "css": "vimeo.css",
+    "js": "bundles/os2displayvimeo/templates/vimeo/slides/vimeo/vimeo.js"
   },
   "orientation": "landscape",
   "slide_type": "base",
   "media_type": "image",
-  "script_id": "itk-vimeo",
+  "script_id": "vimeo",
   "ideal_dimensions": {
     "width": "1920",
     "height": "1080"
@@ -29,7 +29,7 @@
   "tools": [
     {
       "name": "Vimeo",
-      "template": "bundles/itkvimeo/apps/toolsModule/itk-vimeo.html"
+      "template": "bundles/os2displayvimeo/apps/toolsModule/vimeo-tool.html"
     }
   ]
 }

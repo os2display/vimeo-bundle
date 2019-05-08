@@ -1,6 +1,6 @@
 // Register the function, if it does not already exist.
-if (!window.slideFunctions['itk-vimeo']) {
-    window.slideFunctions['itk-vimeo'] = {
+if (!window.slideFunctions['vimeo']) {
+    window.slideFunctions['vimeo'] = {
         /**
          * Setup the slide for rendering.
          * @param scope
@@ -29,7 +29,7 @@ if (!window.slideFunctions['itk-vimeo']) {
          *   The region object.
          */
         run: function runSlide (slide, region) {
-            region.itkLog.info('Running itk-vimeo slide: ' + slide.title);
+            region.itkLog.info('Running vimeo slide: ' + slide.title);
 
             // Wait fadeTime before start to account for fade in.
             region.$timeout(function () {
@@ -44,7 +44,7 @@ if (!window.slideFunctions['itk-vimeo']) {
                     loop: 0
                 };
 
-                var element = document.querySelector('.js-itk-vimeo--player-' + slide.uniqueId);
+                var element = document.querySelector('.js-vimeo--player-' + slide.uniqueId);
 
                 try {
                     // Initialize vimeo player.
