@@ -1,6 +1,6 @@
 // Register the function, if it does not already exist.
-if (!window.slideFunctions['vimeo']) {
-    window.slideFunctions['vimeo'] = {
+if (!window.slideFunctions['itk-vimeo']) {
+    window.slideFunctions['itk-vimeo'] = {
         /**
          * Setup the slide for rendering.
          * @param scope

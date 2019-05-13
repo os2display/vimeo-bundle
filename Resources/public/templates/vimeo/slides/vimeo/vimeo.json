@@ -1,5 +1,5 @@
 {
-  "id": "vimeo",
+  "id": "itk-vimeo",
   "theme": "itk",
   "tags": [
     "ITK", "vimeo"
@@ -17,7 +17,7 @@
   "orientation": "landscape",
   "slide_type": "base",
   "media_type": "image",
-  "script_id": "vimeo",
+  "script_id": "itk-vimeo",
   "ideal_dimensions": {
     "width": "1920",
     "height": "1080"
