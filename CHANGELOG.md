@@ -1,4 +1,8 @@
-# itk-os2display/vimeo-bundle CHANGELOG
+# os2display/vimeo-bundle
+
+## 2.0.0
+
+* Renamed to os2display.
 
 ## 1.0.6
 
