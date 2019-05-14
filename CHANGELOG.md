@@ -1,5 +1,9 @@
 # os2display/vimeo-bundle
 
+## 2.0.1
+
+* Fixed composer name.
+
 ## 2.0.0
 
 * Renamed to os2display.
