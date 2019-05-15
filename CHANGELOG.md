@@ -1,5 +1,9 @@
 # os2display/vimeo-bundle
 
+## 2.0.2
+
+* Fixed image path.
+
 ## 2.0.1
 
 * Fixed composer name.
